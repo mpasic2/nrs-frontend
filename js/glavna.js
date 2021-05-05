@@ -1,6 +1,6 @@
-var incrementBtn = doc.getElementsByClassName('inc');
-var decrementBtn = doc.getElementsByClassName('dec');
-var buyBtn = doc.getElementsByClassName('buy');
+var incrementBtn = document.getElementsByClassName('inc');
+var decrementBtn = document.getElementsByClassName('dec');
+var buyBtn = document.getElementsByClassName('buy');
 var cijene = [];
 var proizvodi = [];
 var kolicine = [];
@@ -40,12 +40,6 @@ for(var i = 0; i < decrementBtn.length; i++){
 	})
 }
 
-
-//onsole.log(sadrzajRacuna.innerHTML + "xxxxx");
-//sadrzajRacuna.innerHTML = "";
-//var tabela = '<table><tr id="naslovi"><td id="1">NAZIV</td><td id="2">KOLIČINA</td><td id="3">CIJENA</td></tr>';
-
-
 for(var i = 0; i < buyBtn.length; i++){
 	var btn = buyBtn[i];
 	btn.addEventListener('click', function(event) {
@@ -57,11 +51,11 @@ for(var i = 0; i < buyBtn.length; i++){
 
 		var x = cijena.substring(7, 12);
 
-		sadrzaj(naziv, kolicina, x);
-		/*cijene.push(x);
+		cijene.push(x);
 		proizvodi.push(naziv);
-		kolicine.push(kolicina);*/
-		//console.log("Ovo su proizvodi: " + proizvodi);
+		kolicine.push(kolicina);
+		console.log("Ovo su proizvodi: " + proizvodi);
+		document.getElementById('racun').innerHTML = proizvodi.toString();
 		//console.log("Ovo je sadržaj html-a: " + sadrzajRacuna);
 		
 
@@ -69,20 +63,7 @@ for(var i = 0; i < buyBtn.length; i++){
 
 	})
 }
-//tabela += "</table>";
 
-//	console.log(doc.getElementById('racun'))	
-
-
-
-//sadrzajRacuna.innerHTML = proizvodi.toString();
-//doc.getElementsByClassName('racun').innerHTML = string;
-
-/*function nacrtajTabelu(podaci,error){
-    if(error==null || error==undefined){
-        
-        for(var i=0;i<podaci.length;i++){
-            tabela+="<tr><td>" + podaci[i].naziv + "</td><td>" + podaci[i].aktivnost + "</td><td>" + podaci[i].dan + "</td><td>" + podaci[i].start + "</td><td>" +podaci[i].end +"</tr>"  ;
-        }
-
-*/
+let pov = function(){
+	return 1;
+}

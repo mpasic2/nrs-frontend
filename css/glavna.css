@@ -1,0 +1,193 @@
+body{
+	margin: 0;
+	font-family: system-ui;
+}
+
+.parallax, .parallax1{
+	background-image: url('../images/povrce.jpg');
+	height: max-content;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page-title{
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: white;
+	padding: 50px;
+	font-variant: small-caps;
+	font-size: 100px;
+	font-family: fantasy;
+	letter-spacing: 20px;
+}
+
+.items{
+	width: max-content;
+	margin: 25px;
+	border: 1px solid #184d47;
+	border-radius: 0 0 50px 50px;
+	display: inline-block;
+	text-align: center;
+}
+
+.items:hover{
+	box-shadow: 0 0 10px 3px #184d47;
+}
+
+.images{
+	display: inline-block;
+}
+
+.item-image-size{
+	height: 200px;
+	width: 300px;
+	padding: 5px;
+}
+
+.description{
+	margin: 20px;
+	min-height: 100px;
+}
+
+.item-select{
+	margin: 10px 0 0 0;
+}
+
+.buynow-btn{
+	border: 1px solid #184d47;
+	background: #184d47;
+	padding: 5px 15px;
+	border-radius: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	color: white;
+}
+
+.buynow-btn:hover{
+	border: 1px solid #5b8c5a;
+	box-shadow: 0 0 10px 5px #5b8c5a inset;
+}
+
+.sticky{
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+
+.container{
+	margin: 50px 50px 50px 5%;
+	width: 90%;
+	text-align: center;
+}
+
+.btncolor{
+	margin: 0;
+	padding: 2px 2px 2px 5px;
+	border: none;
+	background-color: #e7e7e7;
+}
+
+.kol{
+	text-align: center;
+	width: 25px;
+	border: none;
+	background-color: #e7e7e7;
+}
+
+.title{
+	padding: 50px;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*.dropdown-content a:hover {background-color: #ddd;}*/
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.footer{
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	padding: 20px;
+}
+
+.quick-links{
+	color: white;
+	font-size: 20px;
+	display: inline-block;
+	min-width: 30%;
+}
+
+.quick{
+	font-weight: bold;
+}
+
+.quick-links ul{
+	padding: 0;
+}
+
+.quick-links li{
+	list-style: none;
+	padding: 10px;
+	font-weight: 300px;
+}
+
+.a-links{
+	text-decoration: none;
+	color: white;
+}
+
+.a-links:hover{
+	color: #00BF85;
+}
+
+.icon{
+	border-radius: 50%;
+	border: 1px solid white;
+	padding: 10px 15px 10px 15px;
+	margin-right: 5px;
+}
+
+.icon:hover{
+	background: white;
+	color: black;
+}
+
+.copyright{
+	font-size: 16px;
+	font-family: verdana, arial, helvecita, sans-sefir;
+	text-align: center;
+	margin: 15px;
+}
