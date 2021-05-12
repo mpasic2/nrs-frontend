@@ -16,7 +16,7 @@
 	<div id="sticky">
 		<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><i class="fa fa-home fa-1x"></i>Pocetna</a>
+    <a class="navbar-brand home" onclick="" href="#"><i class="fa fa-home fa-1x"></i>Pocetna</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,18 +31,122 @@
             </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="popusti.html">Popusti</a>
+          <a class="nav-link" href="#popusti">Popusti</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#kontakt">Kontakt</a>
         </li>
       </ul>
-        <a href="korpa.html" class="btn text-dark nav-link" type="submit"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+        <button class="btn text-dark nav-link" onclick="" type="submit"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></button>
         <a href="http://34.65.74.184:8080/job/POS-kasa-Pipeline/lastSuccessfulBuild/artifact/POS_kasa-1.0-SNAPSHOT-jar-with-dependencies.jar" class="btn text-white nav-link dow" type="submit"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Preuzimanje</a>
     </div>
   </div>
 </nav>
 	</div>
+  <div class="container" id="popusti">
+    <div class="categories">
+        <img src="../images/voce/limun.jpg" class="item-image" />
+      <div class="description">
+        <b>Limun</b><br/>
+        <div class="item select">
+          Cijena: <s>2.70 KM</s> 2.00 KM/kg
+        </div>
+        <label>Količina:</label>
+        <label class="btncolor">
+        <button class="btncolor dec">-</button>
+        <input class="kol" id="1" type="text" name="qty" value="1"></input>
+        <button class="btncolor inc">+</button>
+      </label>
+        <br/>
+        <button class="buynow-btn">Kupi</button>
+      </div>
+    </div>
+    <div class="categories">
+        <img src="../images/voce/kivi.jpg" class="item-image" />
+      <div class="description">
+        <b>Kiwi</b><br/>
+        <div class="item select">
+          Cijena: <s>3.30 KM</s> 2.50 KM/kg
+        </div>
+        <label>Količina:</label>
+        <label class="btncolor">
+        <button class="btncolor dec">-</button>
+        <input class="kol" id="2" type="text" name="qty" value="1"></input>
+        <button class="btncolor inc">+</button>
+      </label>
+        <br/>
+        <button class="buynow-btn">Kupi</button>
+      </div>
+    </div>
+    <div class="categories">
+        <img src="../images/meso/pastrmka.jpg" class="item-image" />
+      <div class="description">
+        <b>Pastrmka</b><br/>
+        <div class="item select">
+          Cijena: <s>12.00 KM</s> 9.95 KM/kg
+        </div>
+        <label>Količina:</label>
+        <label class="btncolor">
+        <button class="btncolor dec">-</button>
+        <input class="kol" id="3" type="text" name="qty" value="1"></input>
+        <button class="btncolor inc">+</button>
+      </label>
+         <br/>
+        <button class="buynow-btn">Kupi</button>
+      </div>
+    </div>
+    <div class="categories">
+        <img src="../images/povrce/krompir.jpg" class="item-image" />
+      <div class="description">
+        <b>Krompir</b><br/>
+        <div class="item select">
+          Cijena: <s>2.10 KM</s> 1.60 KM/kg
+        </div>
+        <label>Količina:</label>
+        <label class="btncolor">
+        <button class="btncolor dec">-</button>
+        <input class="kol" id="4" type="text" name="qty" value="1"></input>
+        <button class="btncolor inc">+</button>
+      </label>
+        <br/>
+        <button class="buynow-btn">Kupi</button>
+      </div>
+    </div>
+    <div class="categories">
+        <img src="../images/mlijecni proizvodi/pavlaka.jpg" class="item-image" />
+      <div class="description">
+        <b>Pavlaka</b><br/>
+        <div class="item select">
+          Cijena: <s>6.50 KM</s> 5.00 KM/kg
+        </div>
+        <label>Količina:</label>
+        <label class="btncolor">
+        <button class="btncolor dec">-</button>
+        <input class="kol" id="5" type="text" name="qty" value="1"></input>
+        <button class="btncolor inc">+</button>
+      </label>
+        <br/>
+        <button class="buynow-btn">Kupi</button>
+      </div>
+    </div>
+    <div class="categories">
+        <img src="../images/povrce/luk.jpg" class="item-image" />
+      <div class="description">
+        <b>Paradajz</b><br/>
+        <div class="item select">
+          Cijena: <s>2.50 KM</s> 1.90 KM/kg
+        </div>
+        <label>Količina:</label>
+        <label class="btncolor">
+        <button class="btncolor dec">-</button>
+        <input class="kol" id="6" type="text" name="qty" value="1"></input>
+        <button class="btncolor inc">+</button>
+      </label>
+         <br/>
+        <button class="buynow-btn">Kupi</button>
+      </div>
+    </div>
+  </div>
   <div class="container" id="povrce">
     <div class="parallax">
       <div class="title">POVRĆE</div> 
@@ -250,7 +354,7 @@
       <div class="quick-links">
         <div class="quick">Dodatno</div>
         <ul>
-          <li><a href="" class="a-links"><i class="fa fa-facebook icon"></i><i class="fa fa-instagram icon"></i></a></li>
+          <li><a href="https://www.facebook.com/" class="a-links"><i class="fa fa-facebook icon"></i></a><a href="https://www.instagram.com/" class="a-links"><i class="fa fa-instagram icon"></i></a></li>
           <li><a href="" class="a-links">mob: +387/----</a></li>
           <li><a href="" class="a-links">mail</a></li>
         </ul>

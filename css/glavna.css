@@ -199,3 +199,27 @@ body{
 .dow{
 	margin-left: 10px;
 }
+
+s{
+	color: red;
+}
+
+.categories{
+	width: max-content;
+	margin: 25px;
+	border: 1px solid #184d47;
+	border-radius: 0 0 50px 50px;
+	display: inline-block;
+	height: max-content;
+}
+
+.categories:hover{
+	box-shadow: 0 0 10px 3px #184d47;
+}
+
+.item-image{
+	height: 130px;
+	width: 220px;
+	padding: 0;
+}
+
