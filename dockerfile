@@ -1,2 +1,2 @@
 FROM nginx:alpine
-COPY . /usr/share/nginx/html/Pos-Kasa-FrontEnd
+COPY . /usr/share/nginx/html
