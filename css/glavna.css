@@ -212,9 +212,44 @@ s{
 	display: inline-block;
 	height: max-content;
 }
+.categories-popusti{
+	width: max-content;
+	margin: 25px;
+	border: 3px solid #cf1d1d;
+	border-radius: 15px 15px 50px 50px;
+	display: inline-block;
+	height: max-content;
+	background-color: white;
+	font-size: 25px;
+	box-shadow: 0 0 10px 3px #fd6500;
+	animation:argh-my-eyes2 0.02s infinite;
+}
+#popusti{
+	border: 3px solid #cf1d1d;
+	border-radius: 15px 15px 50px 50px;
+	box-shadow: 0 0 80px 30px #f60000a9;
+	background-color: #facaca;
+}
+
+.categories-popusti:hover{
+	box-shadow: 0 0 10px 7px #fd6500;
+}
+
+.body-page{
+	background-color: rgb(255, 252, 204);
+}
 
 .categories:hover{
 	box-shadow: 0 0 10px 3px #184d47;
+}
+
+#akcijaNaslov{
+	font-size: 50px;
+	color:tomato;
+	width: 100%;
+	border-radius: 15px 15px 50px 50px;
+
+	animation:argh-my-eyes 0.5s infinite;
 }
 
 .item-image{
@@ -223,3 +258,20 @@ s{
 	padding: 0;
 }
 
+@keyframes argh-my-eyes {
+    0%   { background-color: rgb(236, 191, 191); }
+    49% { background-color: rgb(246, 159, 159); }
+    50% { background-color: rgb(250, 154, 154); }
+    99% { background-color: rgb(248, 80, 80); }
+    100% { background-color: rgb(243, 67, 67); }
+  }
+
+  @keyframes argh-my-eyes2 {
+    0%   { box-shadow: rgb(255, 255, 255); }
+    49% {box-shadow : rgb(255, 0, 0); }
+    50% { box-shadow: rgb(248, 248, 248); }
+    99% { box-shadow: rgb(255, 15, 15); }
+    100% { box-shadow: rgb(255, 255, 255); }
+  }
+
+  
