@@ -7,6 +7,9 @@
 	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	
   </HEAD>
 <BODY>
@@ -38,7 +41,7 @@
           <a class="nav-link" href="#kontakt">Kontakt</a>
         </li>
       </ul>
-        <button class="btn text-dark nav-link" onclick="" type="submit"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></button>
+        <button class="btn text-dark nav-link" data-toggle="modal" data-target="#cart" type="submit"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></button>
         <a href="http://34.65.74.184:8080/job/POS-kasa-Pipeline/lastSuccessfulBuild/artifact/POS_kasa-1.0-SNAPSHOT-jar-with-dependencies.jar" class="btn text-white nav-link dow" type="submit"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Preuzimanje</a>
     </div>
   </div>
@@ -61,7 +64,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn">Kupi</button>
+        <button class="buynow-btn" data-name="Limun" data-price="2">Kupi</button>
       </div>
     </div>
     <div class="categories-popusti">
@@ -78,7 +81,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn">Kupi</button>
+        <button class="buynow-btn" data-name="Kiwi" data-price="2.50">Kupi</button>
       </div>
     </div>
     <div class="categories-popusti">
@@ -95,7 +98,7 @@
         <button class="btncolor inc">+</button>
       </label>
          <br/>
-        <button class="buynow-btn">Kupi</button>
+         <button class="buynow-btn" data-name="Pastrmka" data-price="9.95">Kupi</button>
       </div>
     </div>
     <div class="categories-popusti">
@@ -112,7 +115,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn">Kupi</button>
+        <button class="buynow-btn" data-name="Krompir" data-price="1.60">Kupi</button>
       </div>
     </div>
     <div class="categories-popusti">
@@ -129,7 +132,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn">Kupi</button>
+        <button class="buynow-btn" data-name="Pavlaka" data-price="5">Kupi</button>
       </div>
     </div>
     <div class="categories-popusti">
@@ -146,7 +149,7 @@
         <button class="btncolor inc">+</button>
       </label>
          <br/>
-        <button class="buynow-btn">Kupi</button>
+         <button class="buynow-btn" data-name="Luk" data-price="1.90">Kupi</button>
       </div>
     </div>
   </div>
@@ -170,7 +173,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn buy">Kupi</button>
+        <button class="buynow-btn buy" data-name="Paradajz" data-price="2.50">Kupi</button>
       </div>
     </div>
     <div class="items">
@@ -189,7 +192,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn buy">Kupi</button>
+        <button class="buynow-btn buy" data-name="Krastavac" data-price="1.80">Kupi</button>
       </div>
     </div>
     <div class="items">
@@ -208,7 +211,7 @@
         <button class="btncolor inc">+</button>
       </label>
          <br/>
-        <button class="buynow-btn buy">Kupi</button>
+         <button class="buynow-btn buy" data-name="Zelena salata" data-price="2">Kupi</button>
       </div>
     </div>
   </div>
@@ -232,7 +235,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn buy">Kupi</button>
+        <button class="buynow-btn buy" data-name="Banane" data-price="2.70">Kupi</button>
       </div>
     </div>
     <div class="items">
@@ -251,7 +254,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn buy">Kupi</button>
+        <button class="buynow-btn buy" data-name="Jabuka" data-price="1.50">Kupi</button>
       </div>
     </div>
     <div class="items">
@@ -270,7 +273,7 @@
         <button class="btncolor inc">+</button>
       </label>
          <br/>
-        <button class="buynow-btn buy">Kupi</button>
+         <button class="buynow-btn buy" data-name="Narandža" data-price="2">Kupi</button>
       </div>
     </div>
   </div>
@@ -294,7 +297,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn buy">Kupi</button>
+        <button class="buynow-btn buy" data-name="Jogurt" data-price="1.30">Kupi</button>
       </div>
     </div>
     <div class="items">
@@ -313,7 +316,7 @@
         <button class="btncolor inc">+</button>
       </label>
         <br/>
-        <button class="buynow-btn buy">Kupi</button>
+        <button class="buynow-btn buy" data-name="Mlijeko" data-price="1.10">Kupi</button>
       </div>
     </div>
     <div class="items">
@@ -332,7 +335,7 @@
         <button class="btncolor inc">+</button>
       </label>
          <br/>
-        <button class="buynow-btn buy">Kupi</button>
+         <button class="buynow-btn buy" data-name="Sir" data-price="3.20">Kupi</button>
       </div>
     </div>
   </div>
@@ -368,11 +371,37 @@
   <div class="copyright">
     &copy 2021 Projektni tim 4
   </div>
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Korpa</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+            
+          </table>
+          <div>UKUPAN IZNOS: <span class="total-cart"></span> KM</div>
+        </div>
+        <div class="modal-footer">
+            <div>
+              <button type="button" class="clear-cart btn btn-danger" data-dismiss="modal">Isprazni</button>
+            </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+            <button type="button" class="btn btn-primary">Naruči</button>
+        </div>
+      </div>
+    </div>
+  </div> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <script src="../js/scroll.js"></script>
 <script src="../js/glavna.js"></script>
 <script src="../test/testovi.js"></script>
+<script src="../js/korpa.js"></script>
 </BODY>
 </HTML>
