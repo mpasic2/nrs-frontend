@@ -102,9 +102,9 @@ var shoppingCart = (function() {
     obj.listCart = function() {
       var cartCopy = [];
       for(i in cart) {
-        item = cart[i];
-        itemCopy = {};
-        for(p in item) {
+        var item = cart[i];
+        var itemCopy = {};
+        for(var p in item) {
           itemCopy[p] = item[p];
   
         }
@@ -124,6 +124,7 @@ var shoppingCart = (function() {
     var name = $(this).data('name');
     var price = Number($(this).data('price'));
     shoppingCart.addItemToCart(name, price, 1);
+    //console.log(shoppingCart.);
     displayCart();
   });
   
