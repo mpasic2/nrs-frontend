@@ -1,69 +1,48 @@
-var incrementBtn = document.getElementsByClassName('inc');
-var decrementBtn = document.getElementsByClassName('dec');
-var buyBtn = document.getElementsByClassName('buy');
-var cijene = [];
-var proizvodi = [];
-var kolicine = [];
-var string = "";
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+let header = document.querySelector('.header-2');
 
-for(var i = 0; i < incrementBtn.length; i++){
-	var btn = incrementBtn[i];
-	btn.addEventListener('click', function(event) {
-		var btnClick = event.target;
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+});
 
-		var input = btnClick.parentElement.children[1];
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
 
-		var inputValue = input.value;
+    if(window.scrollY > 150){
+        header.classList.add('active');
+    }else{
+        header.classList.remove('active');
+    }
 
-		var newValue = parseInt(inputValue) + 1;
-
-		input.value = newValue;
-	})
 }
 
-for(var i = 0; i < decrementBtn.length; i++){
-	var btn = decrementBtn[i];
-	btn.addEventListener('click', function(event) {
-		var btnClick = event.target;
+let countDate = new Date('june 10, 2021 00:00:00').getTime();
 
-		var input = btnClick.parentElement.children[1];
+function CountDown(){
 
-		var inputValue = input.value;
+    let now = new Date().getTime();
+    gap = countDate - now;
 
-		var newValue = parseInt(inputValue) - 1;
+    let second = 1000;
+    let minute = second * 60;
+    let hour = minute * 60;
+    let day = hour * 24;
 
-		if(newValue >= 1){
-			input.value = newValue;
-		}else{
-			input.value = 1;
-		}
-	})
+    let d = Math.floor(gap / (day));
+    let h = Math.floor((gap % (day)) / (hour));
+    let m = Math.floor((gap % (hour)) / (minute));
+    let s = Math.floor((gap % (minute)) / (second));
+
+    document.getElementById('day').innerText = d;
+    document.getElementById('hour').innerText = h;
+    document.getElementById('minute').innerText = m;
+    document.getElementById('second').innerText = s;
+
 }
 
-for(var i = 0; i < buyBtn.length; i++){
-	var btn = buyBtn[i];
-	btn.addEventListener('click', function(event) {
-		var btnClick = event.target;
-		console.log(btnClick.parentElement.children[0].textContent);
-		var naziv = btnClick.parentElement.children[0].textContent;
-		var cijena = btnClick.parentElement.children[2].children[0].textContent;
-		var kolicina = btnClick.parentElement.children[4].children[1].value;
-
-		var x = cijena.substring(7, 12);
-
-		cijene.push(x);
-		proizvodi.push(naziv);
-		kolicine.push(kolicina);
-		console.log("Ovo su proizvodi: " + proizvodi);
-		document.getElementById('racun').innerHTML = proizvodi.toString();
-		//console.log("Ovo je sadržaj html-a: " + sadrzajRacuna);
-		
-
-		//string += naziv + "  " + kolicina + "  " + cijena + "<br>";
-
-	})
-}
-
-let pov = function(){
-	return 1;
-}
+setInterval(function(){
+    CountDown();
+},1000)

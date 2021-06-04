@@ -1,378 +1,503 @@
 <!DOCTYPE html>
-<HTML lang="bs">  
-<HEAD> 
-<TITLE>POS kasa</TITLE>
-	<link rel="stylesheet" type="text/css" href="../css/glavna.css">
-	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
-	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive grocery website design tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/glavna.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	
-  </HEAD>
-<BODY>
-	<div class="parallax">
-		<div class="page-title">ONLINE KUPOVINA</div>
-	</div>
-	<div id="sticky">
-		<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand home" onclick="" href="#"><i class="fa fa-home fa-1x"></i>Pocetna</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropbtn" href="#">Kategorije</a>
-            <div class="dropdown-content">
-              <a href="#povrce">Povrce</a>
-              <a href="#voce">Voce</a>
-              <a href="#mlijecni_proizvodi">Mlijecni proizvodi</a>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div class="header-1">
+
+        <img class="logo" src="../images/logo.png" alt="">
+
+        <form action="" class="search-box-container">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">Početna</a>
+            <a href="#category">Kategorija</a>
+            <a href="#product">Proizvodi</a>
+            <a href="#deal">Dogovor</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+
+        <div class="icons">
+            <button class="fas fa-shopping-cart fa-3x" data-toggle="modal" data-target="#cart" ></button>
+            <a href="#" class="fas fa-download"></a>
+            <a href="#" class="fas fa-user-circle"></a>
+        </div>
+
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image">
+        <img src="../images/home-img.png" alt="">
+    </div>
+
+    <div class="content">
+        <span>Svježe i organsko</span>
+        <h3>Vaši svakodnevni proizvodi</h3>
+        <button class="btn">Započnite</button>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="../images/banner-1.jpg" alt="">
+        <div class="content">
+            <h3>Specijalna ponuda</h3>
+            <p>Do 45% popusta</p>
+            <button class="btn">Provjeri</button>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="../images/banner-2.jpg" alt="">
+        <div class="content">
+            <h3>Ograničena ponuda</h3>
+            <p>Do 50% popusta</p>
+            <button class="btn">Provjeri</button>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- category section starts  -->
+
+<section class="category" id="category">
+
+    <h1 class="heading">kupujte po <span>kategorijama</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Povrće</h3>
+            <p>Do 50% popusta</p>
+            <img src="../images/category-1.png" alt="">
+            <button class="btn">Kupi sada</button>
+        </div>
+        <div class="box">
+            <h3>Sok</h3>
+            <p>Do 44% popusta</p>
+            <img src="../images/category-2.png" alt="">
+            <button class="btn">Kupi sada</button>
+        </div>
+        <div class="box">
+            <h3>Meso</h3>
+            <p>Do 35% popusta</p>
+            <img src="../images/category-3.png" alt="">
+            <button class="btn">Kupi sada</button>
+        </div>
+        <div class="box">
+            <h3>Voće</h3>
+            <p>Do 12% popusta</p>
+            <img src="../images/category-4.png" alt="">
+            <button class="btn">Kupi sada</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- product section starts  -->
+
+<section class="product" id="product">
+
+    <h1 class="heading">najnoviji <span>proizvodi</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="discount">-33%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
             </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#popusti">Popusti</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#kontakt">Kontakt</a>
-        </li>
-      </ul>
-        <button class="btn text-dark nav-link" data-toggle="modal" data-target="#cart" type="submit"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></button>
-        <a href="http://34.65.74.184:8080/job/POS-kasa-Pipeline/lastSuccessfulBuild/artifact/POS_kasa-1.0-SNAPSHOT-jar-with-dependencies.jar" class="btn text-white nav-link dow" type="submit"><i class="fa fa-download fa-2x" aria-hidden="true"></i>Preuzimanje</a>
-    </div>
-  </div>
-</nav>
-	</div>
-  <div class="body-page">
-  <div class="container" id="popusti">
-    <h1 id="akcijaNaslov">POSEBNA PONUDA!!</h1>
-    <div class="categories-popusti">
-        <img src="../images/voce/limun.jpg" class="item-image" />
-      <div class="description">
-        <b>Limun</b><br/>
-        <div class="item select">
-          Cijena: <s>2.70 KM</s> 2.00 KM/kg
+            <img src="../images/product-1.png" alt="">
+            <h3>Banana</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>Količina : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn buynow-btn" data-name="Banana" data-price="2">Dodaj u korpu</button>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="1" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn" data-name="Limun" data-price="2">Kupi</button>
-      </div>
-    </div>
-    <div class="categories-popusti">
-        <img src="../images/voce/kivi.jpg" class="item-image" />
-      <div class="description">
-        <b>Kiwi</b><br/>
-        <div class="item select">
-          Cijena: <s>3.30 KM</s> 2.50 KM/kg
+
+        <div class="box">
+            <span class="discount">-45%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="../images/product-2.png" alt="">
+            <h3>Paradajz</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>Količina : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn buynow-btn" data-name="Paradajz" data-price="2">Dodaj u korpu</button>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="2" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn" data-name="Kiwi" data-price="2.50">Kupi</button>
-      </div>
-    </div>
-    <div class="categories-popusti">
-        <img src="../images/meso/pastrmka.jpg" class="item-image" />
-      <div class="description">
-        <b>Pastrmka</b><br/>
-        <div class="item select">
-          Cijena: <s>12.00 KM</s> 9.95 KM/kg
+
+        <div class="box">
+            <span class="discount">-52%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="../images/product-3.png" alt="">
+            <h3>Narandža</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>Količina : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn button" data-name="Narandža" data-price="2">Dodaj u korpu</button>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="3" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-         <br/>
-         <button class="buynow-btn" data-name="Pastrmka" data-price="9.95">Kupi</button>
-      </div>
-    </div>
-    <div class="categories-popusti">
-        <img src="../images/povrce/krompir.jpg" class="item-image" />
-      <div class="description">
-        <b>Krompir</b><br/>
-        <div class="item select">
-          Cijena: <s>2.10 KM</s> 1.60 KM/kg
+
+        <div class="box">
+            <span class="discount">-13%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="../images/product-4.png" alt="">
+            <h3>Mlijeko</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>Količina : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn buynow-btn" data-name="Mlijeko" data-price="2">Dodaj u korpu</button>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="4" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn" data-name="Krompir" data-price="1.60">Kupi</button>
-      </div>
-    </div>
-    <div class="categories-popusti">
-        <img src="../images/mlijecni proizvodi/pavlaka.jpg" class="item-image" />
-      <div class="description">
-        <b>Pavlaka</b><br/>
-        <div class="item select">
-          Cijena: <s>6.50 KM</s> 5.00 KM/kg
+
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="../images/product-5.png" alt="">
+            <h3>Šljiva</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>Količina : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn buynow-btn" data-name="Šljiva" data-price="2">Dodaj u korpu</button>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="5" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn" data-name="Pavlaka" data-price="5">Kupi</button>
-      </div>
-    </div>
-    <div class="categories-popusti">
-        <img src="../images/povrce/luk.jpg" class="item-image" />
-      <div class="description">
-        <b>Paradajz</b><br/>
-        <div class="item select">
-          Cijena: <s>2.50 KM</s> 1.90 KM/kg
+
+        <div class="box">
+            <span class="discount">-29%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="../images/product-6.png" alt="">
+            <h3>Bademi</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>Količina : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn buynow-btn" data-name="Bademi" data-price="2">Dodaj u korpu</button>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="6" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-         <br/>
-         <button class="buynow-btn" data-name="Luk" data-price="1.90">Kupi</button>
-      </div>
-    </div>
-  </div>
-  <div class="container" id="povrce">
-    <div class="parallax">
-      <div class="title">POVRĆE</div> 
-    </div>
-    <div class="items">
-      <div class="images">
-        <img src="../images/povrce/paradajz.jpg" class="item-image-size" />
-      </div>
-      <div class="description">
-        <b>Paradajz</b><br/>
-        <div class="item select">
-          <p>Cijena: 2.50 KM/kg</p>
+
+        <div class="box">
+            <span class="discount">-55%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="../images/product-7.png" alt="">
+            <h3>Jabuka</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>Količina : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn buynow-btn" data-name="Jabuka" data-price="2">Dodaj u korpu</button>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="1" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn buy" data-name="Paradajz" data-price="2.50">Kupi</button>
-      </div>
-    </div>
-    <div class="items">
-      <div class="images">
-        <img src="../images/povrce/krastavac.jpg" class="item-image-size" />
-      </div>
-      <div class="description">
-        <b>Krastavac</b><br/>
-        <div class="item select">
-          <p>Cijena: 1.80 KM/kg</p>
+
+        <div class="box">
+            <span class="discount">-30%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="../images/product-8.png" alt="">
+            <h3>Maslac</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>Količina : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn buynow-btn" data-name="Maslac" data-price="2">Dodaj u korpu</button>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="2" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn buy" data-name="Krastavac" data-price="1.80">Kupi</button>
-      </div>
-    </div>
-    <div class="items">
-      <div class="images">
-        <img src="../images/povrce/zelena_salata.jpg" class="item-image-size" />
-      </div>
-      <div class="description">
-        <b>Zelena salata</b><br/>
-        <div class="item select">
-          <p>Cijena: 2.00 KM/kg</p>
+
+        <div class="box">
+            <span class="discount">-40%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="../images/product-9.png" alt="">
+            <h3>Mrkva</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> $10.50 <span> $13.20 </span> </div>
+            <div class="quantity">
+                <span>Količina : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <button class="btn buynow-btn" data-name="Mrkva" data-price="2">Dodaj u korpu</button>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="3" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-         <br/>
-         <button class="buynow-btn buy" data-name="Zelena salata" data-price="2">Kupi</button>
-      </div>
+
     </div>
-  </div>
-  <div class="container" id="voce">
-    <div class="parallax">
-      <div class="title">VOĆE</div> 
-    </div>
-    <div class="items">
-      <div class="images">
-        <img src="../images/voce/banane.jpg" class="item-image-size" />
-      </div>
-      <div class="description">
-        <b>Banane</b><br/>
-        <div class="item select">
-          <p>Cijena: 2.70 KM/kg</p>
+
+</section>
+
+<!-- product section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal" id="deal">
+
+    <div class="content">
+
+        <h3 class="title">Ponuda dana</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam possimus voluptates commodi laudantium! Doloribus sint voluptatibus quaerat sequi suscipit nulla?</p>
+
+        <div class="count-down">
+            <div class="box">
+                <h3 id="day">00</h3>
+                <span>Dan</span>
+            </div>
+            <div class="box">
+                <h3 id="hour">00</h3>
+                <span>Sat</span>
+            </div>
+            <div class="box">
+                <h3 id="minute">00</h3>
+                <span>Minuta</span>
+            </div>
+            <div class="box">
+                <h3 id="second">00</h3>
+                <span>Sekunda</span>
+            </div>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="4" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn buy" data-name="Banane" data-price="2.70">Kupi</button>
-      </div>
+
+        <button class="btn">Provjeri</button>
+
     </div>
-    <div class="items">
-      <div class="images">
-        <img src="../images/voce/jabuke.jpg" class="item-image-size" />
-      </div>
-      <div class="description">
-        <b>Jabuka</b><br/>
-        <div class="item select">
-          <p>Cijena: 1.50 KM/kg</p>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>kontakt</span></h1>
+
+    <form action="">
+
+        <div class="inputBox">
+            <input type="text" placeholder="ime">
+            <input type="email" placeholder="email">
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="5" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn buy" data-name="Jabuka" data-price="1.50">Kupi</button>
-      </div>
-    </div>
-    <div class="items">
-      <div class="images">
-        <img src="../images/voce/narandze.jpg" class="item-image-size" />
-      </div>
-      <div class="description">
-        <b>Narandža</b><br/>
-        <div class="item select">
-          <p>Cijena: 2.00 KM/kg</p>
+
+        <div class="inputBox">
+            <input type="number" placeholder="broj telefona">
+            <input type="text" placeholder="subjekt">
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="6" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-         <br/>
-         <button class="buynow-btn buy" data-name="Narandža" data-price="2">Kupi</button>
-      </div>
-    </div>
-  </div>
-  <div class="container" id="mlijecni_proizvodi">
-    <div class="parallax">
-      <div class="title">MLIJEČNI PROIZVODI</div> 
-    </div>
-  <div class="items">
-      <div class="images">
-        <img src="../images/mlijecni proizvodi/jogurt.jpg" class="item-image-size" />
-      </div>
-      <div class="description">
-        <b>Jogurt</b><br/>
-        <div class="item select">
-          <p>Cijena: 1.30 KM/100ml</p>
+
+        <textarea placeholder="poruka" name="" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Pošalji poruku" class="btn">
+
+    </form>
+
+</section>
+
+<!-- contact section ends --> 
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <img class="logo" src="../images/logo.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam culpa sit enim nesciunt rerum laborum illum quam error ut alias!</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" class="btn fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/?hl=en" class="btn fab fa-instagram"></a>
+                <a href="https://www.google.com" class="btn fab fa-google"></a>
+            </div>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="4" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn buy" data-name="Jogurt" data-price="1.30">Kupi</button>
-      </div>
-    </div>
-    <div class="items">
-      <div class="images">
-        <img src="../images/mlijecni proizvodi/mlijeko.jpg" class="item-image-size" />
-      </div>
-      <div class="description">
-        <b>Mlijeko</b><br/>
-        <div class="item select">
-          <p>Cijena: 1.10 KM/l</p>
+        
+        <div class="box">
+            <h3>Lokacija</h3>
+            <div class="links">
+                <a href="#">Adresa 1</a>
+                <a href="#">Adresa 2</a>
+                <a href="#">Adresa 3</a>
+                <a href="#">Adresa 4</a>
+            </div>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="5" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-        <br/>
-        <button class="buynow-btn buy" data-name="Mlijeko" data-price="1.10">Kupi</button>
-      </div>
-    </div>
-    <div class="items">
-      <div class="images">
-        <img src="../images/mlijecni proizvodi/sir.jpg" class="item-image-size" />
-      </div>
-      <div class="description">
-        <b>Sir</b><br/>
-        <div class="item select">
-          <p>Cijena: 3.20 KM/kom</p>
+
+        <div class="box">
+            <h3>Brzi linkovi</h3>
+            <div class="links">
+                <a href="#home">Početna</a>
+                <a href="#category">Kategorija</a>
+                <a href="#product">Proizvodi</a>
+                <a href="#deal">Dogovor</a>
+                <a href="#contact">Kontakt</a>
+            </div>
         </div>
-        <label>Količina:</label>
-        <label class="btncolor">
-        <button class="btncolor dec">-</button>
-        <input class="kol" id="6" type="text" name="qty" value="1"></input>
-        <button class="btncolor inc">+</button>
-      </label>
-         <br/>
-         <button class="buynow-btn buy" data-name="Sir" data-price="3.20">Kupi</button>
-      </div>
+
+        <div class="box">
+            <h3>Preuzmi aplikaciju</h3>
+            <div class="links">
+                <a href="#">Google play</a>
+                <a href="#">Window xp</a>
+                <a href="#">App store</a>
+            </div>
+        </div>
+
     </div>
-  </div>
-  <div class="parallax1" id="kontakt">
-    <div class="footer">
-      <div class="quick-links">
-        <div class="quick">Lokacija</div>
-        <ul>
-          <li><a href="" class="a-links">Adresa 1</a></li>
-          <li><a href="" class="a-links">Adresa 2</a></li>
-          <li><a href="" class="a-links">Adresa 3</a></li>
-        </ul>
-      </div>
-      <div class="quick-links">
-        <div class="quick">Uposleni</div>
-        <ul>
-          <li><a href="" class="a-links">Menadžer</a></li>
-          <li><a href="" class="a-links">Skladištar</a></li>
-          <li><a href="" class="a-links">Kasir</a></li>
-        </ul>
-      </div>
-      <div class="quick-links">
-        <div class="quick">Dodatno</div>
-        <ul>
-          <li><a href="https://www.facebook.com/" class="a-links"><i class="fa fa-facebook icon"></i></a><a href="https://www.instagram.com/" class="a-links"><i class="fa fa-instagram icon"></i></a></li>
-          <li><a href="" class="a-links">mob: +387/----</a></li>
-          <li><a href="" class="a-links">mail</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="copyright">
-    &copy 2021 Projektni tim 4
-  </div>
-  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+
+    <h1 class="credit"> Projektni <span> tim 4 </span> | sva prava zadržana! </h1>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Korpa</h5>
@@ -388,19 +513,26 @@
         </div>
         <div class="modal-footer">
             <div>
-              <button type="button" class="clear-cart btn btn-danger" data-dismiss="modal">Isprazni</button>
+              <button type="button" class="isprazni clear-cart btn btn-danger" data-dismiss="modal">Isprazni</button>
             </div>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
-            <button type="button" class="btn btn-primary">Naruči</button>
+            <button type="button" class="zatvori btn btn-secondary" data-dismiss="modal">Zatvori</button>
+            <button type="button" class="naruci btn btn-primary">Naruči</button>
         </div>
       </div>
     </div>
-  </div> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-<script src="../js/scroll.js"></script>
+  </div>
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
 <script src="../js/glavna.js"></script>
 <script src="../js/korpa.js"></script>
-</BODY>
-</HTML>
+    
+</body>
+</html>
